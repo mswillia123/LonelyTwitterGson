@@ -10,11 +10,11 @@ public class Tweet implements Serializable {
 	private Date tweetDate;
 	private String tweetBody;
 	
-	public Tweet() {
+	public Tweet() { //constructor base
 		super();
 	}
 
-	public Tweet(Date tweetDate, String tweetBody) {
+	public Tweet(Date tweetDate, String tweetBody) { // another constructor
 		this.tweetDate = tweetDate;
 		this.tweetBody = tweetBody;
 	}

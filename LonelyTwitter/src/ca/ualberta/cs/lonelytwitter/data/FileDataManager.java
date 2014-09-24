@@ -28,7 +28,7 @@ public class FileDataManager implements IDataManager{
 			FileInputStream fis = ctx.openFileInput(FILENAME);
 			ObjectInputStream ois = new ObjectInputStream(fis);
 
-			lts = (ArrayList<Tweet>) ois.readObject();
+			lts = (ArrayList<Tweet>) ois.readObject(); //we know we are getting a Tweet object from the file, class must be prepared for this - serializing (tweet.java)
 
 		} catch (Exception e) {
 			Log.i("LonelyTwitter", "Error casting");
